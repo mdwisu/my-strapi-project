@@ -1,5 +1,5 @@
 {
-  "kind": "singleType",
+  "kind": "collectionType",
   "collectionName": "posts",
   "info": {
     "singularName": "post",
@@ -16,10 +16,8 @@
       "required": true
     },
     "description": {
-      "type": "string"
-    },
-    "body": {
-      "type": "richtext"
+      "type": "string",
+      "required": true
     },
     "image": {
       "allowedTypes": [
@@ -27,6 +25,10 @@
       ],
       "type": "media",
       "multiple": false,
+      "required": true
+    },
+    "body": {
+      "type": "richtext",
       "required": true
     },
     "slug": {
